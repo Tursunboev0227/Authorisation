@@ -1,0 +1,19 @@
+using Authorication.Domain.Enums;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Authorication.Domain.Entities.ForToken
+{
+    public class UserToken
+    {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public string ?FullaName { get; set; }
+        public string? Login { get; set;}
+
+        public string? Password { get; set; }
+        public Role Status { get; set; }
+    }
+}
